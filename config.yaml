@@ -1,0 +1,43 @@
+decision_tree_classifier:
+  criterion: entropy
+  max_depth: 5
+  max_features: null
+  min_samples_leaf: 1
+  min_samples_split: 2
+feature_selection:
+- cylinders
+- displayments
+- horsepower
+- weight
+- acceleration
+- model year
+- origin_1
+- origin_2
+- origin_3
+gradient_boosting_classifier:
+  learning_rate: 0.01
+  max_depth: 5
+  min_samples_split: 5
+  n_estimators: 100
+  subsample: 0.8
+k_neighbors_classifier:
+  metric: manhattan
+  n_neighbors: 7
+  p: 1
+  weights: distance
+logistic_regression:
+  C: 100
+  max_iter: 100
+  penalty: l1
+  solver: liblinear
+random_forest_classifier:
+  bootstrap: false
+  max_depth: null
+  max_features: sqrt
+  min_samples_leaf: 1
+  min_samples_split: 5
+  n_estimators: 100
+svc:
+  C: 0.1
+  gamma: 0.01
+  kernel: linear
